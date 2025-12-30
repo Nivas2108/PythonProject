@@ -21,6 +21,6 @@ print(l2)
 l=[20,30,47]
 l2=list(filter(lambda x:x<=20,l))
 print(l2)
-l=[1,2,45,67]
+l=[1,2,45,66]
 l2=functools.reduce(lambda a,b:a*b,l)
 print(l2)
