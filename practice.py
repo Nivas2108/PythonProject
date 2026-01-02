@@ -22,7 +22,7 @@ else:
 # c.	Check even or odd
 # d.	If even divide the number by 3 and print the remainder
 # e.	If odd divide the number by 2 and print the remainder.
-n=10
+n=120
 if 100<=n>=1000:
     if n%2==0:
         print(n%3)
