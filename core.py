@@ -38,6 +38,18 @@ else:
         print(n%5)
     else:
         print(n%7)
-
-
+##########################################
+import functools
+s="*@hi123"
+n= lambda text: sum(map(ord, filter(str.isalpha,text)))
+result = n
+print(result)
+#############################################
+# l="hi123@"
+# l2=reduce(lambda x,y:x+ord(y,list(lambda x:x.isalpha(),l)),0)
+# print()
+##########################################
+l1=[1,2,3,34,4,455,6,6,6,7,8,8,8,9,10]
+l=set(l)
+print(l)
 
