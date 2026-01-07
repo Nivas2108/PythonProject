@@ -24,3 +24,13 @@ print(l2)
 l=[1,2,45,66]
 l2=functools.reduce(lambda a,b:a*b,l)
 print(l2)
+
+###################
+t = (1, (2, 3), 4)
+s = 0
+for i in t:
+ if type(i) == tuple:
+     s += sum(i)
+ else:
+    s += i
+print(s)
