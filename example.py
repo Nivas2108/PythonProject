@@ -54,4 +54,4 @@ l=["A","B","C"]
 for i in range(n):
     print(l[i%3],end="")
 #################################
-print(('abc'*n)[:n])
+print(('abc'*n)[:n])##SLICING METHOD

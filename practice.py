@@ -78,4 +78,59 @@ print(s)
 for i in range(700,900):
     if i%2==0:
         print(i)
-
+########################################################
+# n=int(input())
+# if 10<=n<=100:
+#     for i in range (n):
+#         print("CVCORP")
+# else:
+#     print("Invalid Input")
+#########################################################
+# a=int(input())
+# b=int(input())
+# c=0
+# if a>b:
+#     a,b=b,a
+# for i in range(a-1,b):
+#     c=c+1
+#     if c>1:
+#         print(f"{i}*{i+1}",end=", ")
+# print(f"{b}*{b+1}")
+# for i in range(a,b):
+#     c=c+1
+#     if c>1:
+#         print(i*(i+1),end=", ")
+# print(b*(b+1))
+##############################################
+# a=int(input())
+# b=int(input())
+# c=0
+# if a<b:
+#     for i in range(a,b+1,1):
+#         c=c+1
+#         if c>1:
+#             print(",",end=" ")
+#         if i<0:
+#             print(f"5*({i})",end="")
+#         else:
+#             print(f"5*{i}",end="")
+# else:
+#     for i in range(a,b-1,-1):
+#         c=c+1
+#         if c>1:
+#             print(",",end=" ")
+#         if i<0:
+#             print(f"5*({i})",end="")
+#         else:
+#             print(f"5*{i}",end="")
+#####################################################
+a=float(input())
+b=float(input())
+c=0
+while(round(a,1)<=b):
+    c=c+1
+    if c>1:
+        print(",",end=" ")
+    print(f"{a:.1f}^2",end="")
+    a=a+0.2
+print(".")
