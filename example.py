@@ -34,3 +34,24 @@ for i in t:
  else:
     s += i
 print(s)
+
+###########################
+t = (1, 2, 3)
+for i in t:
+    i = i*2
+    print(t)
+#################ABCABC QUESTION
+n=5
+# for i in range(1,n+1):
+#     if i%3==2:
+#         print("B",end="")
+#     if i%3==1:
+#         print("A",end="")
+#     if i%3==0:
+#         print("C",end="")
+#############################
+l=["A","B","C"]
+for i in range(n):
+    print(l[i%3],end="")
+#################################
+print(('abc'*n)[:n])
