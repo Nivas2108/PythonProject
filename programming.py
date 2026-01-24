@@ -87,6 +87,6 @@ def isprime(a):
     return fc==2
 n=int(input())
 if isprime(n):
-    print("prime")
+    print("prime number")
 
 
