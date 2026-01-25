@@ -79,14 +79,48 @@
 # n=int(input())
 # isprime(n)
 ####################boolean
-def isprime(a):
-    fc=0
-    for i in range(1,a+1):
-        if a%i==0:
-            fc=fc+1
-    return fc==2
-n=int(input())
-if isprime(n):
-    print("prime number")
+# def isprime(a):
+#     fc=0
+#     for i in range(1,a+1):
+#         if a%i==0:
+#             fc=fc+1
+#     return fc==2
+# n=int(input())
+# if isprime(n):
+#     print("prime number")
+#####################
+for i in "welcome":
+    print(i)
+###############################
+for i in range(1,3):
+    for j in "hi":
+        print(i,j)
+###############################
+def welcome(name):
+    return "welcome" +name
+print(welcome(" nivas"))
+#########################
+def math(small,large):
+    diff=small-large
+    return diff
+print(math(5,4))
+#############################*arg is as TUPLE #argument
+def new(*args):
+    for i in args:
+        print(type(args))
+new(1,"hi",56,True)
+##########################**kwarg #KEYWORD ARGUMENT## is as dictionary
+def new(**kwargs):
+    for keys,values in kwargs.items():
+        print(keys,values)
+        print(type(kwargs))
+new(a=1,b="hi",c=True)
+############################GLOBAL
+name="nivas"
+def n():
+    global name
+    name="NIVAS"
+    print(name)
+n()
 
 
