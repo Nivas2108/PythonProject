@@ -36,19 +36,20 @@
 #             s=s+int(i)
 #     print(s)
 ####################HIGHEST,LOWEST,SPAN
-# a=2674672
-# h=0
+# a=267467289
 # l=9
+# h=0
 # while a>0:
 #     r=a%10
 #     if r<l:
 #         l=r
-#         a=a//10
-#         print(l)
 #     elif r>h:
 #         h=r
-#         print(h)
-#         print(h-l)
+#     a=a//10
+# print(l)
+# print(h)
+# print(h-l)
+        # print(h-l)
 ##################### HIGHEST,LOWEST,DIFFERENCE #######
 # n=6745489
 # # Convert number to string and then to list of digits
@@ -60,26 +61,26 @@
 # print("Lowest digit:", lowest)
 # print(span)
 #####################################  NEAREST PRIME  ######
-y=int(input())
-a=y
-def prime(x):
-    for i in range(2,x):
-        if x%i==0:
-            return False
-    return True
-c=0
-while c!=1:
-    a=a+1
-    if prime(a)==True:
-        c=1
-print(a)
-c=0
-b=y
-while c!=1:
-    b=b-1
-    if prime(a)==True:
-        c=1
-print(b)
+# y=int(input())
+# a=y
+# def prime(x):
+#     for i in range(2,x):
+#         if x%i==0:
+#             return False
+#     return True
+# c=0
+# while c!=1:
+#     a=a+1
+#     if prime(a)==True:
+#         c=1
+# print(a)
+# c=0
+# b=y
+# while c!=1:
+#     b=b-1
+#     if prime(a)==True:
+#         c=1
+# print(b)
 ############# FIBONACCI ################
 # n=int(input())
 # a=0
@@ -89,3 +90,78 @@ print(b)
 #     c=a+b
 #     a=b
 #     b=c
+################################# nearest prime
+# a = int(input())
+# num1 = a - 1
+# num2 = a + 1
+# while True:
+#     prime = True
+#     for i in range(2, num1):
+#         if num1 %  i == 0:
+#             prime = False
+#             break
+#     if prime:
+#         break
+#     num1 -= 1
+# while True:
+#     prime = True
+#     for j in range(2, num2):
+#         if num2 % j == 0:
+#             prime = False
+#             break
+#     if prime:
+#         break
+#     num2 += 1
+# if abs(a - num1) > abs(a - num2):
+#     print(num2)
+# elif abs(a - num1) == abs(a - num2):
+#     print(num1)
+#     print(num2)
+# else:
+#     print(num1)
+##############################  n terms of alternative fibonacci series   ######
+# n=int(input())
+# a=0
+# b=1
+# for i in range(1,2*n+1):
+#     if i%2==1:
+#         print(a,end=" ")
+#     c=a+b
+#     a=b
+#     b=c
+############# Average of all Palindrome Numbers between the Range ########
+# a=int(input())
+# b=int(input())
+# for i in range(a,b+1):
+#     t=i
+#     c=0
+#     rev=0
+#     avg=0
+#     while t>0:
+#         sum = 0
+#         r=t%10
+#         rev=rev*10+r
+#         t=t//10
+#     if rev==i:
+#         print(i)
+####################### ROUND ##########
+a=float(input())
+b=float(input())
+c=0
+while(round(a,1)<=b):
+    c=c+1
+    if c>1:
+        print(",",end=" ")
+    print(f"{a:.1f}^2",end="")
+    a=a+0.2
+print(".")
+
+
+
+
+
+
+
+
+
+
