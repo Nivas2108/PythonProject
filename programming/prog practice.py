@@ -145,17 +145,37 @@
 #     if rev==i:
 #         print(i)
 ####################### ROUND ##########
-a=float(input())
-b=float(input())
-c=0
-while(round(a,1)<=b):
-    c=c+1
-    if c>1:
-        print(",",end=" ")
-    print(f"{a:.1f}^2",end="")
-    a=a+0.2
-print(".")
-
+# a=float(input())
+# b=float(input())
+# c=0
+# while(round(a,1)<=b):
+#     c=c+1
+#     if c>1:
+#         print(",",end=" ")
+#     print(f"{a:.1f}^2",end="")
+#     a=a+0.2
+# print(".")
+############################### prime factors ####
+def isprime(a):
+    fc=0
+    for i in range(1,a+1):
+        if a%i==0:
+            fc=fc+1
+    return fc==2
+a=int(input())
+f=0
+if a<0:
+    a=-a
+if a==0:
+    print("Invalid Input")
+else:
+    for i in range(1,a+1):
+        if a%i==0:
+            if isprime(i):
+                print(i,end=" ")
+                f=1
+    if f==0:
+        print("No Prime Factors")
 
 
 
