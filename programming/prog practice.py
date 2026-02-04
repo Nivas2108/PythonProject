@@ -156,26 +156,45 @@
 #     a=a+0.2
 # print(".")
 ############################### prime factors ####
-def isprime(a):
-    fc=0
-    for i in range(1,a+1):
-        if a%i==0:
-            fc=fc+1
-    return fc==2
+# def isprime(a):
+#     fc=0
+#     for i in range(1,a+1):
+#         if a%i==0:
+#             fc=fc+1
+#     return fc==2
+# a=int(input())
+# f=0
+# if a<0:
+#     a=-a
+# if a==0:
+#     print("Invalid Input")
+# else:
+#     for i in range(1,a+1):
+#         if a%i==0:
+#             if isprime(i):
+#                 print(i,end=" ")
+#                 f=1
+#     if f==0:
+#         print("No Prime Factors")
+############################################# ARMSTRONG NUMBERS IN THE GIVEN RANGE ####
 a=int(input())
-f=0
-if a<0:
-    a=-a
-if a==0:
-    print("Invalid Input")
-else:
-    for i in range(1,a+1):
-        if a%i==0:
-            if isprime(i):
-                print(i,end=" ")
-                f=1
-    if f==0:
-        print("No Prime Factors")
+b=int(input())
+for i in range(a,b+1):
+    t=i
+    d=len(str(i))
+    s=0
+    while t>0:
+        r=t%10
+        s=s+(r**d)
+        t=t//10
+    if s==i:
+        print(i)
+#####################
+t = (10, 20, 30)
+for i in t:
+    if i == 20:
+        i = 99
+    print(t)
 
 
 
