@@ -177,25 +177,54 @@
 #     if f==0:
 #         print("No Prime Factors")
 ############################################# ARMSTRONG NUMBERS IN THE GIVEN RANGE ####
-a=int(input())
-b=int(input())
-for i in range(a,b+1):
-    t=i
-    d=len(str(i))
-    s=0
-    while t>0:
-        r=t%10
-        s=s+(r**d)
-        t=t//10
-    if s==i:
-        print(i)
-#####################
-t = (10, 20, 30)
-for i in t:
-    if i == 20:
-        i = 99
-    print(t)
-
+# a=int(input())
+# b=int(input())
+# for i in range(a,b+1):
+#     t=i
+#     d=len(str(i))
+#     s=0
+#     while t>0:
+#         r=t%10
+#         s=s+(r**d)
+#         t=t//10
+#     if s==i:
+#         print(i)
+# #####################
+# t = (10, 20, 30)
+# for i in t:
+#     if i == 20:
+#         i = 99
+#     print(t)
+######################################## $ PRIME $ #########################################
+################### using mul operator ##########
+n=int(input())
+if int(n*0.5)*2==n:
+    print("even")
+else:
+    print("odd")
+#################### using left and right shift operators #########
+n=int(input())
+if int((n>>1)<<1)==n:
+    print("even")
+else:
+    print("odd")
+################### using sub oprator ##############
+n=int(input())
+while n>1:
+    n=n-2
+if n==0:
+    print("even")
+else:
+    print("odd")
+################## using add operator ##############
+n=int(input())
+m=0
+while m<n:
+    m=m+2
+if m==n:
+    print("even")
+else:
+    print("odd")
 
 
 
