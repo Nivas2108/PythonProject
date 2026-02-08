@@ -61,26 +61,26 @@
 # print("Lowest digit:", lowest)
 # print(span)
 #####################################  NEAREST PRIME  ######
-# y=int(input())
-# a=y
-# def prime(x):
-#     for i in range(2,x):
-#         if x%i==0:
-#             return False
-#     return True
-# c=0
-# while c!=1:
-#     a=a+1
-#     if prime(a)==True:
-#         c=1
-# print(a)
-# c=0
-# b=y
-# while c!=1:
-#     b=b-1
-#     if prime(a)==True:
-#         c=1
-# print(b)
+y=int(input())
+a=y
+def prime(x):
+    for i in range(2,x):
+        if x%i==0:
+            return False
+    return True
+c=0
+while c!=1:
+    a=a+1
+    if prime(a)==True:
+        c=1
+print(a)
+c=0
+b=y
+while c!=1:
+    b=b-1
+    if prime(a)==True:
+        c=1
+print(b)
 ############# FIBONACCI ################
 # n=int(input())
 # a=0
@@ -197,34 +197,34 @@
 #     print(t)
 ######################################## $ PRIME $ #########################################
 ################### using mul operator ##########
-n=int(input())
-if int(n*0.5)*2==n:
-    print("even")
-else:
-    print("odd")
-#################### using left and right shift operators #########
-n=int(input())
-if int((n>>1)<<1)==n:
-    print("even")
-else:
-    print("odd")
-################### using sub oprator ##############
-n=int(input())
-while n>1:
-    n=n-2
-if n==0:
-    print("even")
-else:
-    print("odd")
-################## using add operator ##############
-n=int(input())
-m=0
-while m<n:
-    m=m+2
-if m==n:
-    print("even")
-else:
-    print("odd")
+# n=int(input())
+# if int(n*0.5)*2==n:
+#     print("even")
+# else:
+#     print("odd")
+# #################### using left and right shift operators #########
+# n=int(input())
+# if int((n>>1)<<1)==n:
+#     print("even")
+# else:
+#     print("odd")
+# ################### using sub operator ##############
+# n=int(input())
+# while n>1:
+#     n=n-2
+# if n==0:
+#     print("even")
+# else:
+#     print("odd")
+# ################## using add operator ##############
+# n=int(input())
+# m=0
+# while m<n:
+#     m=m+2
+# if m==n:
+#     print("even")
+# else:
+#     print("odd")
 
 
 
