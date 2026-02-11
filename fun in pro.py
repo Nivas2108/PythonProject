@@ -65,19 +65,40 @@
 # n2=int(input())
 # armstrong(n1,n2)
 ############### PALINDROME ###############
-def palindrome(a,b):
-    for i in range(a,b+1):
-        t=i
-        c=0
-        rev=0
-        avg=0
-        while t>0:
-            sum = 0
-            r=t%10
-            rev=rev*10+r
-            t=t//10
-        if rev==i:
-            print(i)
-n1=int(input())
-n2=int(input())
-palindrome(n1,n2)
+# def palindrome(a,b):
+#     for i in range(a,b+1):
+#         t=i
+#         c=0
+#         rev=0
+#         avg=0
+#         while t>0:
+#             sum = 0
+#             r=t%10
+#             rev=rev*10+r
+#             t=t//10
+#         if rev==i:
+#             print(i)
+# n1=int(input())
+# n2=int(input())
+# palindrome(n1,n2)
+############# PRIME FACTORS ################
+def isprime(a):
+    fc=0
+    for i in range(1,a+1):
+        if a%i==0:
+            fc=fc+1
+    return fc==2
+a=int(input())
+f=0
+if a<0:
+    a=-a
+if a==0:
+    print("Invalid Input")
+else:
+    for i in range(1,a+1):
+        if a%i==0:
+            if isprime(i):
+                print(i,end=" ")
+                f=1
+    if f==0:
+        print("No Prime Factors")
