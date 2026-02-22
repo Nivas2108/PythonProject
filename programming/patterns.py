@@ -183,3 +183,39 @@
 #         print(*range(1,n-i+2))
 #     else:
 #         print(*range(n-i+1,0,-1))
+#########################
+import math
+n=5
+a=2
+for i in range(1,n+1):
+    c=0
+    while c<i:
+        prime=True
+        for j in range(2,int((math.sqrt(a)))+1):
+            if a%j==0:
+                prime=False
+                break
+        if prime:
+            print(a,end=" ")
+            c+=1
+        a+=1
+    print()
+###################
+import math
+n=5
+for i in range(1,n+1):
+    a=2
+    col=2
+    c=1
+    print(2,end=" ")
+    while c<i:
+        prime=True
+        for j in range(2, int(math.sqrt(n)) + 1):
+            if a%j==0:
+                prime=False
+                break
+        if prime:
+            print(a,end=" ")
+            c+=1
+        a+=1
+    print()
