@@ -125,7 +125,3 @@ c.process(60,"upi")
 #     print(x+y)
 # fun(10,20)
 # fun=feature(fun)
-
-
-
-
