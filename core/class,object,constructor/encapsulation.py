@@ -62,16 +62,31 @@ class Student:
 
 class SecureFile:
     def __init__(self,password,balance):
-        self.password=password
+        self.__password=password
         self.__balance=balance
     def get_balance(self,password):
-        if self.password==password:
+        if self.__password==password:
             print(self.__balance)
         else:
             print("unauthorized attempt")
 a=SecureFile(1234,500)
 a.get_balance(1234)
-
+####
+class SecureFile:
+    def __init__(self, content, password):
+        self.__content = content          # private content
+        self.__password = password        # private password
+        self.__log = []                   # private log
+    def read(self, password):
+        if password == self.__password:
+            return self.__content
+        else:
+            self.__log.append("Unauthorized attempt")
+            return "Access Denied"
+# Demonstration
+file = SecureFile("Secret Data: Project X", "1234")
+print(file.read("1234"))   # correct password
+print(file.read("1111"))   # wrong password
 # 4.Design an Employee class where:
 # • salary is hidden
 # • outsiders cannot read salary directly
