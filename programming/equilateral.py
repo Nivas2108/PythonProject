@@ -97,8 +97,6 @@ for i in range(1,n+1):
 n=5
 for i in range(1,n+1):
     print(" "*(n-i),end="")
-    # for j in range(1,n-i+1):
-    #     print(end=" ")
     m=1
     for j in range(1,i+1):
         print(m,end=" ")
@@ -121,112 +119,92 @@ for i in range(1,n+1):
             print(end=" ")
     print()
 ###### rhombus #####
-n=5
-for i in range(1,n+1):
-    print(" "*(n-i),end="")
-    print("* "*(i))
-for i in range(n-1,0,-1):
-    print(" "*(n-i),end="")
-    print("* "*(i))
-print()
-######### rhombus row number ####
-n=5
-for i in range(1,n+1):
-    print(" "*(n-i),end="")
-    for j in range(1,i+1):
-        print(i,end=" ")
-    print()
-for i in range(n-1,0,-1):
-    print(" "*(n-i),end="")
-    for j in range(1,i+1):
-        print(i,end=" ")
-    print()
-######## typical numbers in rhombus ###
-n=5
-for i in range(1,n+1):
-    print(" "*(n-i),end="")
-    for j in range(1,i+1):
-        print(j,end="")
-    for j in range(i-1,0,-1):
-        print(j,end="")
-    print()
-for i in range(n,0,-1):
-    print(" "*(n-i),end="")
-    for j in range(1,i+1):
-        print(j,end="")
-    for j in range(i-1,0,-1):
-        print(j,end="")
-    print()
-###########
-n=5
-for i in range(1,n+1):
-    for j in range(i,0,-1):
-        print(j,end="")
-    for j in range(2,i+1):
-        print(j,end="")
-    print()
-for i in range(n,0,-1):
-    for j in range(i,0,-1):
-        print(j,end="")
-    for j in range(i,1,-1):
-        print(j,end="")
-    print()
-###### different * pattern ####
-n=5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i<=j:
-            print("*",end="")
-        else:
-            print(end=" ")
-    for j in range(1,i+1):
-        print("*",end="")
-    print()
-######## big pattern #######
-n=14
-for i in range(1, n + 1):
-    if n<=9:
-        print(" "*(n-i),end="")
-    else:
-        print("  " * (n - i), end="")
-    for j in range(1, i+1):
-        if n <= 9:
-            print(i, end=" ")
-        else:
-            if i<=9:
-                print(end=" ")
-            print(i,end="  ")
-    print()
-for i in range(n-1,0,-1):
-    if n<=9:
-        print(" "*(n-i),end="")
-    else:
-        print("  " * (n - i), end="")
-    for j in range(1, i+1):
-        if n <= 9:
-            print(i, end=" ")
-        else:
-            if i<=9:
-                print(end=" ")
-            print(i,end="  ")
-    print()
-########## Alphabets printing ######
-n=int(input())
-# alp="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-if n==0:
-    print("Zero")
-elif n>0 and n<=26:
-    for i in range(1,n+1):
-        for j in range(1,n-i+1):
-            print(end=" ")
-        for j in range(1,i+1):
-            print(chr(64+i),end=' ')
-        print()
-else:
-    n=-n
-    for i in range(n,0,-1):
-        for j in range(1,n-i+1):
-            print(end=" ")
-        for j in range(1,i+1):
-            print(chr(64+i),end=' ')
-        print()
+# n=5
+# for i in range(1,n+1):
+#     print(" "*(n-i),end="")
+#     print("* "*(i))
+# for i in range(n-1,0,-1):
+#     print(" "*(n-i),end="")
+#     print("* "*(i))
+# print()
+# ######### rhombus row number ####
+# n=5
+# for i in range(1,n+1):
+#     print(" "*(n-i),end="")
+#     for j in range(1,i+1):
+#         print(i,end=" ")
+#     print()
+# for i in range(n-1,0,-1):
+#     print(" "*(n-i),end="")
+#     for j in range(1,i+1):
+#         print(i,end=" ")
+#     print()
+# ######## typical numbers in rhombus ###
+# n=5
+# for i in range(1,n+1):
+#     print(" "*(n-i),end="")
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     for j in range(i-1,0,-1):
+#         print(j,end="")
+#     print()
+# for i in range(n,0,-1):
+#     print(" "*(n-i),end="")
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     for j in range(i-1,0,-1):
+#         print(j,end="")
+#     print()
+# ###########
+# n=5
+# for i in range(1,n+1):
+#     for j in range(i,0,-1):
+#         print(j,end="")
+#     for j in range(2,i+1):
+#         print(j,end="")
+#     print()
+# for i in range(n,0,-1):
+#     for j in range(i,0,-1):
+#         print(j,end="")
+#     for j in range(i,1,-1):
+#         print(j,end="")
+#     print()
+# ###### different * pattern ####
+# n=5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i<=j:
+#             print("*",end="")
+#         else:
+#             print(end=" ")
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print()
+# ######## big pattern #######
+# n=14
+# for i in range(1, n + 1):
+#     if n<=9:
+#         print(" "*(n-i),end="")
+#     else:
+#         print("  " * (n - i), end="")
+#     for j in range(1, i+1):
+#         if n <= 9:
+#             print(i, end=" ")
+#         else:
+#             if i<=9:
+#                 print(end=" ")
+#             print(i,end="  ")
+#     print()
+# for i in range(n-1,0,-1):
+#     if n<=9:
+#         print(" "*(n-i),end="")
+#     else:
+#         print("  " * (n - i), end="")
+#     for j in range(1, i+1):
+#         if n <= 9:
+#             print(i, end=" ")
+#         else:
+#             if i<=9:
+#                 print(end=" ")
+#             print(i,end="  ")
+#     print()

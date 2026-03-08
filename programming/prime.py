@@ -91,6 +91,3 @@ elif abs(a - ap) == abs(a - bp):
     print(bp)
 else:
     print(ap)
-
-
-
