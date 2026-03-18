@@ -50,7 +50,7 @@
 # print(next_prime(n))
 # ############# PREVIOUS PRIME SIMPLE ########
 # def next_prime(a):
-#     m=a-1
+#     m=a+1
 #     while True:
 #         fc=0
 #         for i in range(1,m+1):
@@ -59,7 +59,7 @@
 #         if fc==2:
 #             return m
 #             break
-#         m-=1
+#         m+=1
 # n=5
 # print(next_prime(n))
 ########## NEAREST PRIME #########
