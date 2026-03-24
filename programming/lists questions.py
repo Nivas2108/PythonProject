@@ -77,7 +77,12 @@ l=[92,23,34,67,8]
 l.reverse()
 print(l)
 # 14. Write a program to find sum of any two elements which is equal to key value
-
+# l=list(map(int,input().split()))
+# k=int(input())
+# for i in range(len(l)):
+#     for j in range(i+1,len(l)):
+#         if l[i]+l[j]==k:
+#             print(f"({l[i]},{l[j]})")
 ##############  Maximum & Minimum ##########
 # 15. Write a program to find the largest number in a list.
 from functools import reduce
