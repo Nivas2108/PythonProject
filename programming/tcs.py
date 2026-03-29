@@ -17,14 +17,3 @@ for num in l:
     elif num > second and num != first:
         second = num
 print(second)
-l = [10, 20, 4, 45, 99]
-
-first = second = -1
-
-for num in l:
-    if num > first:
-        second = first
-        first = num
-    elif num > second and num != first:
-        second = num
-print(second)
