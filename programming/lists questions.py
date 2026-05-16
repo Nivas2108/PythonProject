@@ -136,14 +136,50 @@
 #     if c==len(l):
 #         print(i)
 # 27. Write a program to find the factorial of each element in a list
-l=[2,3,4,5,6,7]
-for i in l:
-    c=1
-    for j in range(1,i+1):
-        c*=j
-    print(c)
+# l=[2,3,4,5,6,7]
+# for i in l:
+#     c=1
+#     for j in range(1,i+1):
+#         c*=j
+#     print(c)
                                           # $ Frequency $ #
 # 28. Write a program to find the frequency of each element in a list.
 # 29. Write a program to calculate the backward frequency of elements in a list.
 # 30. Write a program to print frequencies of each element without repetition.
 # 31. Write a program to find the most frequently repeated element in a list.
+# 32. Write a program to find the unique element in a list.
+# 33. Write a program to find the least unique element in a list.
+# 34. Write a program to print elements whose frequency is greater than 1.
+                                           # Rotation #
+# 35. Write a program to print all rotations of a list (clockwise)
+# l=[10,20,30,40]
+# for i in range(len(l)):
+#     print(*l)
+#     l=[l[len(l)-1]]+l[0:len(l)-1]
+# 36. Write a program to print all rotations of a list (anticlockwise)
+# l=[10,20,40,30,50]
+# for i in range(len(l)):
+#     print(*l)
+#     l=l[1:]+[l[0]]
+# 37. Write a program to rotate a list by k positions.(anticlockwise)
+                                           # SubLists #
+# 38. Write a program to print all possible sublists of a list.
+# l=[10,20,30,40,50]
+# for i in range(len(l)):
+#     for j in range(i,len(l)):
+#         for k in range(i,j+1):
+#             print(l[k],end=" ")
+#         print()
+# 39. Write a program to find all subarrays whose sum is equal to a given key.
+# n=30
+# l=[10,20,30,40]
+# for i in range(len(l)):
+#     for j in range(i,len(l)):
+#         l1=l[i:j+1]
+#         if sum(l1)==n:
+#             print(*l1)
+# 40. Write a program to print all possible subsequences of a list.
+                                            # Practice #
+# 41. Write a program to convert a list of digits into a number.
+# 42. Write a program to convert a number into a list of digits.
+# 43. Write a program to reverse a list and also reverse each element in the list.
