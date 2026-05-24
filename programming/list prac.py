@@ -68,21 +68,28 @@
 # else:
 #     print("Not found")
 ######## binary search ######
+# l=list(map(int, input().split()))
+# element=int(input())
+# l.sort()
+# low=0
+# high=len(l)-1
+# found=False
+# while low<=high:
+#     mid=(low+high)//2
+#     if l[mid]==element:
+#         print("element found:",mid+1)
+#         found=True
+#         break
+#     elif element>l[mid]:
+#         low=mid+1
+#     else:
+#         high=mid-1
+# if not found:
+#     print("element not found")
+############# sum of two#############
 l=list(map(int, input().split()))
 element=int(input())
-l.sort()
-low=0
-high=len(l)-1
-found=False
-while low<=high:
-    mid=(low+high)//2
-    if l[mid]==element:
-        print("element found:",mid+1)
-        found=True
-        break
-    elif element>l[mid]:
-        low=mid+1
-    else:
-        high=mid-1
-if not found:
-    print("element not found")
+for i in range(len(l)):
+    for j in range(i+1,len(l)):
+        if l[i]+l[j]==element:
+            print(f"[{l[i]},{l[j]}]")
