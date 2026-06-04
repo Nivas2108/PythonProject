@@ -37,6 +37,8 @@
 #     d[l[i]]=d.get(l[i],0)+1
 # print(d)
 #####
-
+n=[1,2,3,4]
+for i, n in enumerate(n):
+    print(f'{i} : {n}')
 
 
