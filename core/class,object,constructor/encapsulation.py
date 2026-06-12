@@ -175,3 +175,15 @@ class Engine:
 #     def start_car(self):
 
 
+# class A:
+#     def __init__(self):
+#         self.__x=1234
+#     @property
+#     def y(self):
+#         return self.__x
+#     @y.setter
+#     def z(self,nx):
+#         self.__x=nx
+# obj=A()
+# print(obj.y)
+# obj.z=1024
