@@ -30,3 +30,21 @@ for end in range(len(s)):
     l[s[end]] = end
     max_len = max(max_len, end - start + 1)
 print("Length of longest substring:", max_len)
+###########
+### insertion sort ###
+l=[8,2,5,7,6]
+for i in range(1,len(l)):
+    for j in range(i,0,-1):
+        if l[j-1]>l[j]:
+            l[j-1],l[j]=l[j],l[j-1]
+        else:
+            break
+    print(l)
+############
+### selection sort ###
+l=[7,3,4,2,5,8]
+for i in range(len(l)-1):
+    max=0
+    for j in range(0,len(l)-i):
+        if l[j]>l[max]:
+            max=j
