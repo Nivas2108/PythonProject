@@ -99,7 +99,7 @@
 #         d+=int(b[j])**c
 #     if d==i:
 #         if k==0:
-#             print("Armstrong Numbers are (",end=" ")
+#             print("Armstrong Numbers are ",end=" ")
 #         k+=1
 #         if k%2==1:
 #             if k>1:
